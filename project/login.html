@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body
+    {
+      height: auto;
+    }
+    #im1
+    {
+      width: 500px;
+      margin-left:400px;
+      background: none;
+    }
+  </style>
+</head>
+<body >
+<br><br><br>
+  <div id="marq1">
+    <i class="fas fa-dragon" id="i1"></i>
+     <p id="p2">BalaMani Shopping Mall Management System</p>
+   </div>
+   
+  
+           
+          <h2 style="margin: 100px;font-size: 70px;margin-left: 100px;"><i class="fas fa-light fa-broom-ball" id="i2"></i>Mall open</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width: 150px;margin-left: 200px;border-radius: 10px;background-color: black;">Login</button><br><br>
+<input type="button" style="cursor: pointer;color:white;margin-left: 200px;width: 150px;height: 50px;color: black;border-color:antiquewhite;border-radius: 10px;" onclick="contact()" value="contactus"><br><br>
+<input onclick="document.getElementById('id02').style.display='block'" type="button" style="background-color:#3131318a;cursor: pointer;;margin-left: 200px;width: 150px;height: 50px;color: white;border-color:#313131;border-radius: 10px;"  value="Exit">
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post" autocomplete="off" style="padding: 50px;background-color: #9eeaf0;height: 600px;border:none ;">
+    <div class="imgcontainer" >
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname" style="user-select: none;"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" id="in1"  required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="myInput" required>
+        
+      <input type="button" value="Login" id="button1" onclick="openshop()">
+      
+      <label>
+        <input type="checkbox" onclick="myFunction()"> ShowPassword
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      
+    </div>
+
+    <div class="container" >
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="just.html">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+<div id="id02" class="modal">
+  <div id="im1" >
+              <div class="imgcontainer" style="background:none">
+             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal" style="    margin: 0px 23px 5px -127px;
+          
+             font-size: 50px;
+             color: #262626;">&times;</span>
+             <div style=" height: 300px;
+             width: 393px;
+             background-color: rgb(56, 188, 206);
+             margin: 0px 75px;
+             border-radius: 25px;
+             margin-top: 50px;"><br><br>
+              <h1>do you want to EXIT?</h1> 
+              <br><br>
+              <a href="https://www.google.com">
+              <button  style="background-color: rgb(70, 241, 70);margin:0px 50px 0px 50px;width:250px;border-radius: 15px;" id="stay">YES</button></a>
+
+
+              <br><br><a href="login.html" ><button style="background-color: rgb(231, 72, 72);margin:0px 50px 0px 50px;width:250px;border-radius: 15px;" id="leave">NO</button></a>
+          </div>
+          </div>
+</div>
+
+
+<!--
+  
+      <form id="base" autocomplete="off">
+        <div id="div1">
+          <i class="fas fa-light fa-broom-ball" id="i2"></i> 
+         <p id="p1">MallOpen</p><br><br>
+        <input  type="text" id="in1"  placeholder="username" required ><br><br>
+        <input type="password"  id="myInput" placeholder="password" required><br><br>
+        <input type="checkbox" onclick="myFunction()" style="margin:10px 5px 26px 102px;">ShowPassword<br>
+        <input type="button" value="Login" id="in3" onclick="openshop()" ><input type="reset" id="in4"><br><br>
+        <a href="just.html" id="a1">ForgotPassword?</a>
+      </div>
+    -->    
+<script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+
+
+
+
+</script>
+</html>

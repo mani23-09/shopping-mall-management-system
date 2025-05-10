@@ -1,0 +1,100 @@
+<html>
+       <head>
+              <link rel="stylesheet" href="indexshop.css">
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+              <link rel="stylesheet" href="shop.css">
+              <link rel="stylesheet" href="aboutus.css">
+       </head>
+       <body>
+              <marquee id="mar1"style="border: 5px dashed #4061a1;height: 75px;" direction="right">
+                
+              <p align="center" style="color:rgb(36, 77, 94); margin: 0px 0px 0px 0px ;" >Mall Management System</p>
+              </marquee>
+              <button class="li1" onclick="tabed(this,'home','red')" id="defaultOpen">home</button>
+       
+              <a href="aboutus.html"><button class="li1" >AboutUs</button></a>
+              <a href="shopmain.html"><button class="li1"  style="width: 34%;">shops</button></a>
+              <!--<a href="contatus.html"><button class="li1"  onclick="tabed(this,'contactus', 'deeppink')">Contact Us</button>-->
+              
+              <div id="home" class="con1">
+                     <div>
+                            <img src="home2.jpg" style="margin: -69px -20px -28px;height: 591px;width: 493px;">
+                     </div>
+                     <div id="div2">
+                            <a href="home.html" id="a1">balamani Shopping mall Management System at 1987</a>
+                            <a href="clock.html" id="a2">24HOURS available</a>
+                     </div>
+              </div>
+<script>
+       function tabed(elmnt,pageName,color) {
+         var i,con1, li1;
+         con1 = document.getElementsByClassName("con1");
+         for (i = 0; i < con1.length; i++) {
+           con1[i].style.display = "none";
+         }
+         li1= document.getElementsByClassName("li1");
+         for (i = 0; i < li1.length; i++) {
+           li1[i].style.backgroundColor = "";
+         }
+          document.getElementById(pageName).style.display = "block";
+         elmnt.style.backgroundColor = color;
+       }
+       function openCity(evt, shopName) {
+        var i, stcont, stli;
+       stcont = document.getElementsByClassName("stcont");
+       for (i = 0; i < stcont.length; i++) {
+              stcont[i].style.display = "none";
+       }
+       stli = document.getElementsByClassName("stli");
+       for (i = 0; i < stli.length; i++) {
+              stli[i].className = stli[i].className.replace(" active", "");
+       }
+       document.getElementById(shopName).style.display = "block";
+       evt.currentTarget.className += " active";
+}
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+       document.getElementById("sdefaultOpen").click();
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+     
+       </script>
+</html>

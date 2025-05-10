@@ -1,0 +1,274 @@
+
+<html>
+       <head>
+              <link rel="stylesheet" href="indexshop.css">
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+              <link rel="stylesheet" href="shop.css">
+              <link rel="stylesheet" href="aboutus.css">
+       </head>
+       <body>
+              <marquee id="mar1"style="border: 5px dashed #4061a1;height: 75px;" direction="right">
+              <p align="center" style="color:rgb(36, 77, 94); margin: 0px 0px 0px 0px ;" >Mall Management System</p>
+              </marquee>
+              <a href="indexshop1.html"><button class="li1"  >home</button>
+              <a href="aboutus.html"><button class="li1">AboutUs</button></a>
+              
+              <button class="li1" style="width: 34%;" onclick="tabed(this,'shops','burlywood')" id="defaultOpen">shops</button>
+              
+              <div id="shops" class="con1" >
+              <div id="shop">
+                <div class="stab">
+                <a href="#" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop1')" id="sdefaultOpen">shop_Management</button></a>
+                <a href="shopdiv1.html" style="text-decoration: none;"><button class="stli">AddShop</button></a>
+                <a href="shopdiv2.html" style="text-decoration: none;"><button class="stli">EditShop</button></a>
+                <a href="shopdiv3.html" style="text-decoration: none;"><button class="stli">Employee Details</button></a>
+                <a href="shopdiv4.html" style="text-decoration: none;"><button class="stli">Edit Employee Details</button></a>
+                <a href="shopdiv5.html" style="text-decoration: none;"><button class="stli" >Tenant Details</button></a>
+                <a href="shopdiv6.html" style="text-decoration: none;"><button class="stli" >Edit Tenant details</button></a>
+                <a href="shopdiv7.html" style="text-decoration: none;"><button class="stli" >shop allocation</button></a>
+                <a href="shopdiv8.html" style="text-decoration: none;"><button class="stli" >Rent Collection</button></a>
+                <a href="shopdiv9.html" style="text-decoration: none;"><button class="stli" >Edit Rent Collection</button></a>
+                <a href="shopdiv10.html" style="text-decoration: none;"><button class="stli">Employee Attendance</button></a>
+                <a href="shopdiv11.html" style="text-decoration: none;"><button class="stli" >Edit Employee Attendance</button></a>
+                <a href="shopdiv12.html" style="text-decoration: none;"><button class="stli" >Reports</button></a>
+                <a href="shopdiv13.html" style="text-decoration: none;"><button class="stli" >EXIT</button></a>
+              </div>
+              <div id="shop1" class="stcont">
+                <img src="shop01.jpg" >
+                <a href="#">shop_Management_SYSTEM</a>
+                <div style="    margin: -44px 0px 0px 0px;background: white;color: black; height: 345px; ">
+                       <h1>INFORMATION</h1>
+                       <p style="font-size: 35px;color:black">tap to visite a shop management system for shopping mall management system  
+                     </p>
+                       <form action="info.html">
+                               <button>info</button>
+                       </form>
+                       </div>
+                </div>
+           </div>
+           <script>
+            function tabed(elmnt,pageName,color) {
+              var i,con1, li1;
+              con1 = document.getElementsByClassName("con1");
+              for (i = 0; i < con1.length; i++) {
+                con1[i].style.display = "none";
+              }
+              li1= document.getElementsByClassName("li1");
+              for (i = 0; i < li1.length; i++) {
+                li1[i].style.backgroundColor = "";
+              }
+               document.getElementById(pageName).style.display = "block";
+              elmnt.style.backgroundColor = color;
+            }
+            function openCity(evt, shopName) {
+             var i, stcont, stli;
+            stcont = document.getElementsByClassName("stcont");
+            for (i = 0; i < stcont.length; i++) {
+                   stcont[i].style.display = "none";
+            }
+            stli = document.getElementsByClassName("stli");
+            for (i = 0; i < stli.length; i++) {
+                   stli[i].className = stli[i].className.replace(" active", "");
+            }
+            document.getElementById(shopName).style.display = "block";
+            evt.currentTarget.className += " active";
+     }
+            // Get the element with id="defaultOpen" and click on it
+             document.getElementById("defaultOpen").click();
+            document.getElementById("sdefaultOpen").click();
+     let slideIndex = 1;
+     showSlides(slideIndex);
+     
+     function plusSlides(n) {
+       showSlides(slideIndex += n);
+     }
+     
+     function currentSlide(n) {
+       showSlides(slideIndex = n);
+     }
+     
+     function showSlides(n) {
+       let i;
+       let slides = document.getElementsByClassName("mySlides");
+       let dots = document.getElementsByClassName("dot");
+       if (n > slides.length) {slideIndex = 1}    
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+       }
+       for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";  
+       dots[slideIndex-1].className += " active";
+     }
+     var acc = document.getElementsByClassName("accordion");
+     var i;
+     
+     for (i = 0; i < acc.length; i++) {
+       acc[i].addEventListener("click", function() {
+         this.classList.toggle("active");
+         var panel = this.nextElementSibling;
+         if (panel.style.display === "block") {
+           panel.style.display = "none";
+         } else {
+           panel.style.display = "block";
+         }
+       });
+     }
+            
+            </script>
+             <!--<div id="shop">
+              <div class="stab">
+                              <button class="stli" onclick="openCity(event, 'shop1')" id="sdefaultOpen">mani-toys</button>
+                              <button class="stli" onclick="openCity(event, 'shop2')">bala-books</button>
+                              <button class="stli" onclick="openCity(event, 'shop3')">vino-mobiles</button>
+                              <button class="stli" onclick="openCity(event, 'shop4')">anthony-fastfoods</button>
+                              <button class="stli" onclick="openCity(event, 'shop5')">thanges-showroom</button>
+                              <button class="stli" onclick="openCity(event, 'shop6')">antho-fishshop</button>
+                              <button class="stli" onclick="openCity(event, 'shop7')">vetri-textiles</button>
+                              <button class="stli" onclick="openCity(event, 'shop8')">solai-cooldrinks</button>
+                              <button class="stli" onclick="openCity(event, 'shop9')">prasanth-furnitures</button>
+                              <button class="stli" onclick="openCity(event, 'shop10')">puni-theatre</button>
+                              <button class="stli" onclick="openCity(event, 'shop11')">kavin-electronics</button>
+                              <button class="stli" onclick="openCity(event, 'shop12')">madhan-MensWear</button>
+                              <button class="stli" onclick="openCity(event, 'shop13')">jeya-foodcourt</button>
+                              <button class="stli" onclick="openCity(event, 'shop14')">singh-fruits/veg</button>
+                              <button class="stli" onclick="openCity(event, 'shop15')">selvi-jewallery</button>
+                </div>
+
+                <div id="shop1" class="stcont">
+                <img src="shop1.jpg" >
+                <a href="#">mani-toys</a>
+                <div style="    margin: -44px 0px 0px 0px;background: white;color: black; height: 296px; ">
+                       <h1>INTRO</h1>
+                       <p style="font-size: 20px;color:black">Welcome to The Toy Shop, a treasure trove of children’s toys, games, and gifts.
+                              With 16 years experience in the toy trade, we decided to take the plunge and open our first shop on the 1st of June 2017.
+                              Our aim was to create a magical space for kids (and kids at heart), where they could touch, feel, play and interact with the toys they see. To create an experience, not just a shopping trip.
+                               To supply our valued customer with toys of the highest quality and value for money.</p>
+                       <form action="shop1.html">
+                               <button>invite</button>
+                       </form>
+                       </div>
+                </div>
+              
+                <div id="shop2" class="stcont">
+                       <img src="shop2.jpg" >
+                  <a href="shop1.html">bala-books</a>
+                <div style="    margin: -44px 0px 0px 0px;background: rgb(224, 157, 157);color: rgb(92, 6, 6); height: 296px; ">
+                       <h1>INTRO</h1>
+                       <p style="font-size: 20px;color:black">Bookshop.org is an ecommerce platform your store can use as their sole form of ecommerce, or in addition to however you sell books online currently. In this session, learn about what Bookshop is, how the affiliate network works, how your store benefits from joining Bookshop, and why it's especially advantageous for indie bookstores. Whether or not you've heard of Bookshop, you probably have questions,
+                        so please join Sarah High, Bookshop's Senior Partnership Manager, in this virtual event and she'll answer any and all of your queries.
+                       </p>
+                       <form action="shop2.html">
+                              <button>invite</button>
+                      </form>
+                 </div>
+                </div>
+              
+                <div id="shop3" class="stcont">
+                <img src="shop3.jpg" >
+                <a href="shop1.html">vino-mobiles</a>
+                <div style="    margin: -44px 0px 0px 0px;background: rgb(243, 186, 221);color: rgb(113, 6, 139); height: 296px; ">
+                       <h1>INTRO</h1>
+                </div>
+                </div>
+
+                <div id="shop4" class="stcont">
+                       <img src="shop4.jpg" >
+                       <a href="shop1.html">anthony-fastfoods</a>
+                       <div style="    margin: -44px 0px 0px 0px;background: rgb(178, 225, 240);color: rgb(6, 97, 139); height: 296px; ">
+                              <h1>INTRO</h1>
+                       </div>
+                       </div>
+                     
+                 <div id="shop5" class="stcont">
+                       <img src="shop5.jpg" >
+                       <a href="shop1.html">thanges-showroom</a>
+                       <div style="    margin: -44px 0px 0px 0px;background: rgb(194, 236, 185);color: rgb(4, 82, 24); height: 296px; ">
+                              <h1>INTRO</h1>
+                       </div>
+                       </div>
+              
+                       <div id="shop6" class="stcont">
+                              <img src="shop6.jpg" >
+                              <a href="shop1.html">antho-fishshop</a>
+                              <div style="    margin: -44px 0px 0px 0px;background: rgb(193, 228, 240);color: rgb(3, 62, 90); height: 296px; ">
+                                     <h1>INTRO</h1>
+                              </div>
+                              </div>
+                
+              <div id="shop7" class="stcont">
+                       <img src="shop7.jpg" >
+                   <a href="shop1.html">vetri-textiles</a>
+                <div style="    margin: -44px 0px 0px 0px;background: rgb(198, 179, 228);color: rgb(55, 4, 102); height: 296px; ">
+                              <h1>INTRO</h1>
+                </div>
+                  </div>
+              
+                  <div id="shop8" class="stcont">
+                       <img src="shop8.jpg" >
+                   <a href="shop1.html">solai-cooldrinks</a>
+                <div style="    margin: -44px 0px 0px 0px;background: rgb(184, 238, 171);color: rgb(32, 88, 5); height: 296px; ">
+                              <h1>INTRO</h1>
+                </div>
+                  </div>
+                     
+                  <div id="shop9" class="stcont">
+                       <img src="shop9.jpg" >
+                   <a href="shop1.html">prasanth-furnitures</a>
+                <div style="    margin: -44px 0px 0px 0px;background: rgb(238, 181, 193);color: rgb(77, 4, 22); height: 296px; ">
+                              <h1>INTRO</h1>
+                </div>
+                  </div>
+
+                  <div id="shop10" class="stcont">
+                       <img src="shop10.jpg" >
+                <a href="shop1.html">puni-theatre</a>
+                <div style="    margin: -44px 0px 0px 0px;background: rgb(186, 247, 189);color: rgb(2, 36, 6); height: 296px; ">
+                       <h1>INTRO</h1>
+                       </div> 
+                     </div>
+                     
+                     <div id="shop11" class="stcont">
+                       <img src="shop11.jpg" >
+                   <a href="shop1.html">kavin-electronics</a>
+                <div style="    margin: -44px 0px 0px 0px;background: rgb(238, 221, 145);color: rgb(102, 76, 4); height: 296px; ">
+                              <h1>INTRO</h1>
+                </div>
+                  </div>
+                     
+                     <div id="shop12" class="stcont">
+                       <img src="shop12.jpg" >
+                  <a href="shop1.html">madhan-MensWear</a>
+                <div style="    margin: -44px 0px 0px 0px;background: rgb(241, 155, 84);color: rgb(116, 59, 7); height: 296px; ">
+                       <h1>INTRO</h1>
+                </div>
+                </div>
+
+                     <div id="shop13" class="stcont">
+                       <img src="shop13.jpg" >
+                       <a href="shop1.html">jeya-foodcourt</a>
+                       <div style="    margin: -44px 0px 0px 0px;background:rgb(182 169 239);color:rgb(16, 2, 80); height: 296px; ">
+                              <h1>INTRO</h1>
+                              </div> 
+                     </div>
+                     
+                     <div id="shop14" class="stcont">
+                       <img src="shop14.jpg" >
+                       <a href="shop1.html">singh-fruits/veg</a>
+                       <div style="    margin: -44px 0px 0px 0px;background:rgb(210, 233, 111);color:rgb(128, 125, 3); height: 296px; ">
+                              <h1>INTRO</h1>
+                              </div> 
+                     </div>
+                     
+                     <div id="shop15" class="stcont">
+                       <img src="shop15.jpg">
+                       <a href="shop1.html">selvi-jewallery</a>
+                       <div style="    margin: -44px 0px 0px 0px;background:rgb(166, 240, 211);color:rgb(29, 116, 108); height: 296px; ">
+                              <h1>INTRO</h1>
+                              </div> 
+                     </div>
+                  </div>-->
+            </body>
+     </html>

@@ -1,0 +1,238 @@
+<html>
+       <head>
+              <link rel="stylesheet" href="indexshop.css">
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+              <link rel="stylesheet" href="shop.css">
+              <link rel="stylesheet" href="aboutus.css">
+       <style>
+              
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    border-radius: 20px;
+  }
+  img
+  {
+       border-radius: 50px;
+  }
+  img.avatar {
+    width: 350px;
+    margin-top:25px;
+    border:none;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  
+
+              button
+              {
+                     cursor: pointer;
+              }
+              #i1
+              {
+                     font-size:50px;
+                     color:red;
+              }
+              #i4
+              {
+                     font-size: 50px;
+                     color:greenyellow;
+              }
+              #i2
+              {
+                     font-size: 50px;
+                     color:white;
+
+                     
+              }
+              #i3
+              {
+                     font-size: 50px;
+                     color:blue;
+              }
+              #im1
+              {
+                     background-color:white;
+                     height: 400px;
+                     margin-right: 400px;
+                     margin-left:400px;
+                     border-radius:20px;
+              }
+       </style>
+       </head>
+       <body style="background-image: url(contactus.jpg)">
+              
+              <div style="margin-top:50px">
+                     <div><button onclick="document.getElementById('id01').style.display='block'" id="round" style="margin:355px 0px 0px 500px;box-shadow: 2px 2px 5px;" ><i id=i4 class="fa fa-envelope"></i></button></div>
+                     <div><button onclick="document.getElementById('id02').style.display='block'" id="round" style="margin:-10px 0px 0px 615px;box-shadow: 2px 2px 5px;" ><i id=i4 class="fa fa-map-marker"></i></button></diV>
+                     <div><button onclick="document.getElementById('id03').style.display='block'" id="round" style="margin:-300px 0px 0px 400px;box-shadow: 2px 2px 5px;"><i id=i3 class="fa fa-phone"></i></button></div>
+                     <div><button onclick="document.getElementById('id04').style.display='block'" id="round" style="margin:-420px 0px 0px 500px; box-shadow: 2px 2px 5px;border-color:red;background-image: linear-gradient(purple,red,yellow);"><i id=i2 class="fa fa-instagram"></i></button></div>
+                     <div><button onclick="document.getElementById('id05').style.display='block'" id="round" style="margin:-420px 0px 0px 720px;background-color:rgb(135, 135, 216);box-shadow: 2px 2px 5px;border-color:rgb(135, 135, 216)"><i id=i2 class="fa fa-facebook"></i></button></div>
+                     <div><button onclick="document.getElementById('id06').style.display='block'"id="round" style="margin:-300px 0px 0px 800px;box-shadow: 2px 2px 5px;"><i id=i1 class="fa fa-youtube-play"></i></button></div>
+                     <div><button onclick="document.getElementById('id07').style.display='block'" id="round" style="margin:-190px 0px 0px 720px;background-color:rgb(135, 135, 216);box-shadow: 2px 2px 5px;border-color:rgb(135, 135, 216)"><i id=i2 class="fa fa-twitter"></i></button></div>
+                     <div><button onclick="document.getElementById('id08').style.display='block'" id="round" style="margin:-500px 0px 0px 615px;background-color:rgb(135, 135, 216);box-shadow: 2px 2px 5px;border-color:rgb(135, 135, 216);"><i id=i2 class="fa fa-paper-plane"></i></button></div>
+              </div>
+              <div id="id01" class="modal">
+                     <div id="im1" align="center" style="background-color: black;">
+                             <div class="imgcontainer" style="background-color: black;">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" style="color:white">&times;</span>
+                            <img  src="gmail.png" style="height: 350px;border-color:white;" alt="Avatar" class="avatar">
+                            </div>
+                     </div>
+              </div>
+              <div id="id02" class="modal">
+                     <div id="im1" align="center" style="background-color: black;">
+                             <div class="imgcontainer" style="background-color: black;">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal" style="color:white">&times;</span>
+                            <img  src="map.jpg" style="height: 350px;border-color:white;" alt="Avatar" class="avatar">
+                            </div>
+                     </div>
+              </div>
+              <div id="id03" class="modal">
+                     <div id="im1" align="center" style="background-color: black;">
+                             <div class="imgcontainer" style="background-color: black;">
+                            <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal" style="color:white">&times;</span>
+                            <img  src="phone.jpg" style="height: 350px;border-color:white;" alt="Avatar" class="avatar">
+                            </div>
+                     </div>
+              </div>
+              <div id="id04" class="modal">
+                     <div id="im1" align="center" style="background-color: black;">
+                             <div class="imgcontainer" style="background-color: black;">
+                            <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal" style="color:white">&times;</span>
+                            <img  src="insta.jpg" style="height: 350px;border-color:white;width:200px" alt="Avatar" class="avatar">
+                            </div>
+                     </div>
+              </div>
+              <div id="id05" class="modal">
+                     <div id="im1" align="center" style="background-color: black;">
+                             <div class="imgcontainer" style="background-color: black;">
+                            <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal" style="color:white">&times;</span>
+                            <img  src="facebook.jpg" style="height: 350px;border-color:white;width:200px" alt="Avatar" class="avatar">
+                            </div>
+                     </div>
+              </div>
+              <div id="id06" class="modal">
+                     <div id="im1" align="center" style="background-color: black;">
+                             <div class="imgcontainer" style="background-color: black;">
+                            <span onclick="document.getElementById('id06').style.display='none'" class="close" title="Close Modal" style="color:white">&times;</span>
+                            <img  src="youtube.jpg" style="height: 350px;border-color:white;width:200px" alt="Avatar" class="avatar">
+                            </div>
+                     </div>
+              </div>
+              <div id="id07" class="modal">
+                     <div id="im1" align="center" style="background-color: rgb(180, 166, 166);">
+                             <div class="imgcontainer" style="background-color: black;">
+                            <span onclick="document.getElementById('id07').style.display='none'" class="close" title="Close Modal" style="color:white">&times;</span>
+                            <img  src="twitter.jpeg" style="height: 350px;border-color:white;" alt="Avatar" class="avatar">
+                            </div>
+                     </div>
+              </div>
+              <div id="id08" class="modal">
+                     <div id="im1" align="center" style="background-color: black;">
+                             <div class="imgcontainer" style="background-color: black;">
+                            <span onclick="document.getElementById('id08').style.display='none'" class="close" title="Close Modal" style="color:white">&times;</span>
+                            <img  src="telegram.jpg" style="height: 350px;border-color:white;" alt="Avatar" class="avatar">
+                            </div>
+                     </div>
+              </div>>
+</body> 
+<script>
+      // Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    
+}
+      </script>
+</html>
+
+

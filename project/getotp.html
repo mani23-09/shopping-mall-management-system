@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="getotp.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+    </head>
+    <body>
+        
+        <div id="divi1">
+
+        </div>
+        <div id="divi2">
+            <h1 style=" margin-left: 50px;">
+                <b>OTP VERIFICATION FORM</b>
+            </h1>
+        </div>
+        <div id="divi3">
+            <div id="divi4">
+                
+                <i class="fa-light fa-cloud-check">
+            </div>
+            <div id="divi5">
+            <form autocomplete="off">
+                <h3 style="    margin-bottom: initial">Enter Otp Code </h3><br>
+                <input type="text" placeholder="0" id="in1" maxlength="1" required>
+                <input type="text" placeholder="0" id="in2" maxlength="1" required>
+                <input type="text" placeholder="0" id="in3" maxlength="1" required>
+                <input type="text" placeholder="0" id="in4" maxlength="1" required><br><br>
+                <input type="button" value="Verify Otp" onclick="verify()" id="in5">
+            </form>
+            </div>
+        </div>
+    </body>
+    <script>
+        const in1 = document.getElementById("in1");
+        const in2 = document.getElementById("in2");
+        const in3 = document.getElementById("in3");
+        const in4 = document.getElementById("in4");
+        in1.addEventListener("keyup",function(event){
+            in2.focus();
+        })
+        in2.addEventListener("keyup",function(event){
+            in3.focus();
+        })
+        in3.addEventListener("keyup",function(event){
+            in4.focus();
+        })
+        function Verify()
+        {
+            var a=document.getElementById("in1").value;
+            var b=document.getElementById("in2").value;
+            var c=document.getElementById("in3").value;
+            var d=document.getElementById("in4").value;
+            console.log(a,b,c,d);
+            if(a==2 && b==0 && c==0 && d==3 )
+                window.location="pass.html";
+            else
+                alert("incorrect Otp");
+
+        }
+
+    </script>
+</html>

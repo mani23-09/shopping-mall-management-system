@@ -1,0 +1,41 @@
+<html>
+<style>
+label
+{
+	color:violet;
+}
+input
+{
+	height:40px;	
+}
+body
+{
+	background-color:cyan;
+}
+</style>
+<body>
+<h1 style="text-align:center">Login</h1>
+<form align="center">
+	<label>MOBILE NUMBER:</label>
+	<input type="text" placeholder="9999999999" id="u1" style="margin-left:10px"><br><br>
+	<label>REGISTER NUMBER:</label>
+	<input type="text" placeholder="21aucs000" id="a1" style="margin-left:-5px"><br><br>
+	<label>DATE OF BIRTH:</label>
+	<input type="text" placeholder="22-11-0000" id="b1" style="margin-left:25px"><br><br>
+	<input type="button" value="log-in" onclick="login()">
+</form>
+</body>
+<script>
+	var a=document.getElementById("u1").value;
+	let b=document.getElementById("a1").value;
+	var c=document.getElementById("b1").value;
+	console.log(a+b+c);
+	function login()
+	{
+		if(a==Number(a))
+			document.write("login-ur-account");
+		else
+			alert("error");
+	}
+</script>
+</html>

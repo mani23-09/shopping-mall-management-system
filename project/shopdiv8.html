@@ -1,0 +1,294 @@
+<html>
+       <head>
+              <link rel="stylesheet" href="indexshop.css">
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+              <link rel="stylesheet" href="shop.css">
+              <link rel="stylesheet" href="aboutus.css">
+       </head>
+       <style>
+        .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+      }
+      
+      /* Center the image and position the close button */
+      .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+      border-radius: 20px;
+      height: 400px;
+      width:400px;
+      }
+      img
+      {
+      border-radius: 50px;
+      }
+      img.avatar {
+      width: 350px;
+      margin-top:25px;
+      border:none;
+      }
+      
+      .container {
+      padding: 16px;
+      }
+      
+      span.psw {
+      float: right;
+      padding-top: 16px;
+      }
+      
+      /* The Modal (background) */
+      .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      padding-top: 60px;
+      }
+      
+      /* Modal Content/Box */
+      .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+      }
+      
+      /* The Close Button (x) */
+      .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+      color: red;
+      cursor: pointer;
+      }
+      
+      /* Add Zoom Animation */
+      .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+      }
+      
+      @-webkit-keyframes animatezoom {
+      from {-webkit-transform: scale(0)} 
+      to {-webkit-transform: scale(1)}
+      }
+      
+      @keyframes animatezoom {
+      from {transform: scale(0)} 
+      to {transform: scale(1)}
+      }
+      
+      /* Change styles for span and cancel button on extra small screens */
+      @media screen and (max-width: 300px) {
+      span.psw {
+      display: block;
+      float: none;
+      }
+      .cancelbtn {
+      width: 100%;
+      }
+      }
+      #im1
+      {
+         background-color:white;
+         padding-top: 40px;
+         text-align: center;
+         margin-right: 400px;
+         margin-left:400px;
+         border-radius:20px;
+      }
+      #stay
+      {
+      color:white;
+      background-color:#15ce46fc;
+      height: 50px;
+      width:250px;
+      text-align:center;
+      border-radius: 4px;
+      box-shadow: 3px 3px 7px #15ce46fc;
+      border-color:#15ce46fc;
+      }
+      #leave
+      {
+      color:white;
+      background-color:#e92727;
+      height: 50px;
+      width:250px;
+      text-align:center;
+      border-radius: 4px;
+      box-shadow: 3px 3px 7px #e92727;
+      border-color: #e92727;
+      }
+      
+      </style>
+       <body>
+              <marquee id="mar1"style="border: 5px dashed #4061a1;height: 75px;" direction="right">
+              <p align="center" style="color:rgb(36, 77, 94); margin: 0px 0px 0px 0px ;" >Mall Management System</p>
+              </marquee>
+              <a href="indexshop1.html"><button class="li1" onclick="tabed(this,'home','red')" >home</button>
+              <a href="aboutus.html"><button class="li1" onclick="tabed(this,'aboutus', 'aqua')">AboutUs</button></a>
+              
+              <button class="li1" style="width: 34%;" onclick="tabed(this,'shops','burlywood')" id="defaultOpen">shops</button>
+              
+              <div id="shops" class="con1" >
+              <div id="shop">
+                <div class="stab">
+                    <a href="shopmain.html" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop1')" >shop_Management</button></a>
+                    <a href="shopdiv1.html" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop2')" >AddShop</button></a>
+                    <a href="shopdiv2.html" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop3')" >EditShop</button></a>
+                    <a href="shopdiv3.html" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop4')" >Employee Details</button></a>
+                    <a href="shopdiv4.html" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop5')" >Edit Employee Details</button></a>
+                    <a href="shopdiv5.html" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop6')" >Tenant Details</button></a>
+                    <a href="shopdiv6.html" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop7')" >Edit Tenant details</button></a>
+                    <a href="shopdiv7.html" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop8')" >shop allocation</button></a>
+                    <a href="#" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop9')" id="sdefaultOpen">Rent Collection</button></a>
+                    <a href="shopdiv9.html" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop10')">Edit Rent Collection</button></a>
+                    <a href="shopdiv10.html" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop11')">Employee Attendance</button></a>
+                <a href="shopdiv11.html" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop12')">Edit Employee Attendance</button></a>
+                <a href="shopdiv12.html" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop13')">Reports</button></a>
+                <a href="shopdiv13.html" style="text-decoration: none;"><button class="stli" onclick="openCity(event, 'shop14')">EXIT</button></a></div>
+                    
+               
+
+
+           
+           <div id="shop9" class="stcont">
+            <img src="shop9.jpg" >
+     <div style="    margin: 44px 0px 0px 0px;background:#ff9501;color: rgb(243, 206, 215); height: 345px; ">
+                   <h1>RENT-ALLOCATION</h1>
+                   <p style="font-size:50px">Tap to allocate a shop in shopping mall management</p>
+                   <div><button onclick="document.getElementById('id01').style.display='block'">allocate</button></div>
+     </div>
+       </div>
+           
+               <div id="id01" class="modal">
+                <div id="im1" >
+                            <div class="imgcontainer" style="background-color: white">
+                           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" style="    margin: -53px -134px 5px 0px;color:black">&times;</span>
+                           <div style=" height: 300px;
+                           width: 393px;
+                           background-color: black;
+                           margin: 0px 75px;
+                           border-radius: 25px;
+                           margin-top: 50px;"><br><br>
+    
+                              <label style="margin-left:-210px;font-size: 20px;" >username</label><br>
+                              <input type="text" placeholder="abcd" style="height: 30px;width:300px;outline: none;" id="indiv" value="mbrent" required><br><br>
+                              <label style="margin-left:-210px;font-size: 20px;" >password</label><br>
+                              <input type="password" placeholder="password"  style="height: 30px;width:300px;outline: none;" id="ininput" required><br><br>
+                              <button onclick="addshop()" style="height: 25px;width:150px;">submit</button><br>
+    
+                          
+                        </div>
+                        </div>
+             </div>
+             </div>
+   
+           
+             
+         
+         </div>
+<script>
+         function tabed(elmnt,pageName,color) {
+            var i,con1, li1;
+            con1 = document.getElementsByClassName("con1");
+            for (i = 0; i < con1.length; i++) {
+              con1[i].style.display = "none";
+            }
+            li1= document.getElementsByClassName("li1");
+            for (i = 0; i < li1.length; i++) {
+              li1[i].style.backgroundColor = "";
+            }
+             document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+          }
+          function openCity(evt, shopName) {
+           var i, stcont, stli;
+          stcont = document.getElementsByClassName("stcont");
+          for (i = 0; i < stcont.length; i++) {
+                 stcont[i].style.display = "none";
+          }
+          stli = document.getElementsByClassName("stli");
+          for (i = 0; i < stli.length; i++) {
+                 stli[i].className = stli[i].className.replace(" active", "");
+          }
+          document.getElementById(shopName).style.display = "block";
+          evt.currentTarget.className += " active";
+   }
+          // Get the element with id="defaultOpen" and click on it
+           document.getElementById("defaultOpen").click();
+          document.getElementById("sdefaultOpen").click();
+   let slideIndex = 1;
+   showSlides(slideIndex);
+   
+   function plusSlides(n) {
+     showSlides(slideIndex += n);
+   }
+   
+   function currentSlide(n) {
+     showSlides(slideIndex = n);
+   }
+   
+   function showSlides(n) {
+     let i;
+     let slides = document.getElementsByClassName("mySlides");
+     let dots = document.getElementsByClassName("dot");
+     if (n > slides.length) {slideIndex = 1}    
+     if (n < 1) {slideIndex = slides.length}
+     for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+     }
+     for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" active", "");
+     }
+     slides[slideIndex-1].style.display = "block";  
+     dots[slideIndex-1].className += " active";
+   }
+   var acc = document.getElementsByClassName("accordion");
+   var i;
+   
+   for (i = 0; i < acc.length; i++) {
+     acc[i].addEventListener("click", function() {
+       this.classList.toggle("active");
+       var panel = this.nextElementSibling;
+       if (panel.style.display === "block") {
+         panel.style.display = "none";
+       } else {
+         panel.style.display = "block";
+       }
+     });
+   }
+   function addshop()
+  {
+    var a=document.getElementById("indiv").value; 
+    var c=document.getElementById("ininput").value;
+        console.log(c);
+    if("mbrent".localeCompare(a)==0 && "#@rentcol".localeCompare(c)==0)
+      window.location="rent.html";
+    else
+      alert("password incorrect");
+  }   
+  
+          
+          </script>
+          </body>
+          </html>
+          
+       

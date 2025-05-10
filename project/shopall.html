@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        background-image: url(shopall.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    form{
+        background-color: #92f0db91;
+        height: 470px;
+        width: 1150px;
+        border-radius:10px ;
+        margin:150px 100px 50px 100px;
+    }
+    label
+    {
+        margin-left: 200px;
+        font-size: 30px;
+        color:green;
+    }
+    input
+    {
+        height: 30px;
+        width:150px;
+        text-align: center;
+        border-color:aqua ;
+        outline-color:aqua ;
+    }
+    #div1
+    {
+        background-color: aqua;
+        height: 100px;
+        width:1150px;
+        margin-top:-130px;
+        border-radius: 35px;
+        
+    }
+    #div1 label
+    {
+        font-size: 40px;
+        margin:0px 30px 0px 20px;
+    }
+    h1{
+        text-align: center;
+    }
+    button
+    {
+       
+        height:30px;
+        width:150px;
+        cursor: pointer;
+        border-color:aqua ;
+    }
+    #b1
+    {
+        margin-left: 50px;
+    }
+    h1
+    {
+        margin-top:-10px;
+    }
+    #div2
+    {
+        margin-top: 30px;
+        display: flex;
+        margin-left: 211px;
+    }
+   
+    #div21 label
+    {
+        
+        margin-left:120px;
+    }
+    #div22 label
+    {
+        margin-left:50px;
+    }
+    #div2 input
+    {
+        margin-left: 50px;
+    }
+    
+</style>
+<body>
+    <h1 style="font-size:80px">Shop allocation</h1>
+    <form autocomplete="off" action="http://localhost:8080/pro/shopall.jsp">
+       
+        <div id="div1">
+            <br>
+        <label style="margin-left: 200px;">Shop allocation Id</label>
+        <input type="text" placeholder="sa0" name="t1"  >
+        
+        <a href="shopdiv7.html"><input type="button" id="b1" value="Exit" style="cursor:pointer"></a>
+    </div>
+      
+        <div id="div2">
+         
+            <div id="div21">
+                <h1 style="font-size: 50px;    margin: 30px 0px 50px 100px;;text-align: center;" > Do you want to allocate</h1> 
+       <label for="">Tenant Id</label><input name="t2" type="text" placeholder="00" style="margin-left: 113px;" required><br><br>
+       <!-- <label for="">Tenant Name</label><input type="text" placeholder="naruto.m" style="margin-left: 145px;"><br><br>
+       <label for="">Tenant address</label><input type="text" placeholder="35,aiya nager" style="margin-left: 127px;"><br><br>
+       <label for="">Tenant PhoneNumber</label><input type="text" placeholder="00 000 00 000" style="margin-left: 45px;"><br><br>
+       <label for=""> Expert Rent Rate</label><input type="text" placeholder="00000" style="margin-left: 100px;"><br><br>
+       <label for="">Expert Floor Number</label><input type="text" placeholder="0"><br><br> -->
+  >
+       <label for="">Shop Id</label><input type="text" name="t3" placeholder="00" style="margin-left: 120px;" required><br><br>
+       <!-- <label for="">Floor Number</label><input type="text" placeholder="0" style="margin-left: 50px;"><br><br>
+       <label for="">Shop Number</label><input type="text" placeholder="a0" style="margin-left: 55px;"><br><br>
+       <label for="">Rent Per Month</label><input type="text" placeholder="0000" style="margin-left: 35px;"><br><br>
+       <label for="">Status</label><input type="text" placeholder="occupaid/not-occupaid" style="margin-left: 150px;"><br><br>
+       <label for="">Bonus Amount</label><input type="text" placeholder="00000" style="margin-left: 45px;"><br><br> -->
+       <button style=" margin-left: 220px;">allocate</button> 
+    </div>
+
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        background-image: url(del4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    h1
+    {
+        font-size: 80px;
+        color:black;
+        margin-top:30px;
+    }
+    h2
+    {
+        font-size: 50px;
+        color:#e95b24;
+    }
+    input
+    {
+        border:none;
+        outline:none;
+        background: none;
+        border-bottom: 5px dashed red;
+        text-align: center;
+        color: black;
+        width: 500px;
+        font-size: 35px;
+
+    }
+    button
+    {
+        height: 50px;
+        width:250px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 20px;
+    }
+    button:hover
+    {
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <h1>Do you want Delete employ attendance?</h1>
+    <form action="http://localhost:8080/pro/delempatt.jsp" autocomplete="off">
+    <h2>ENTER EMPLOY ID</h2>
+    <br>
+    <input type="text" name="t1" value="ep"><br><br>
+    <button>Delete</button>
+    </form>
+    <form action="editdel4.html"><button>exit</button></form>
+</body>
+</html>

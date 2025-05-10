@@ -1,0 +1,385 @@
+*
+{
+    user-select: none;
+    box-sizing: border-box;
+}
+
+/* Style the tab */
+.stab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: auto;
+  margin:-69px 0px 0px -20px;
+}
+
+/* Style the buttons inside the tab */
+.stab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.stab button:hover {
+  background-color:rgb(176, 230, 243);
+  color:rgb(3, 41, 70);
+}
+#shop button{
+  cursor: pointer;;
+}
+/* Create an active/current "tab button" class */
+.stab button.active {
+  background-color: black;
+  color: #f0caca;
+}
+
+/* Style the tab content */
+.stcont {
+  float: left;
+  padding: 0px 12px;
+  border: none;
+  width: 70%;
+  border-left: none;
+  height: 700px;
+  margin: -36px -13px 0px 18px;
+}
+#shops a:hover{
+  color:black;
+}
+#shop1
+{
+  text-align: center;
+  font-size: 30px;
+  
+
+}
+#shop1 img
+{
+  margin-left: -12px;
+  height: 400px;
+  width: 915px;
+  border:none;
+}
+#shop1 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:white;
+  font-size: 50px;
+}
+#shop1 a:hover
+{
+  color:rgb(240, 136, 157);
+}
+#shop2
+{
+  text-align: center;
+  font-size: 30px;
+}
+#shop2 img
+{
+  margin-left: -12px;
+  height: 400px;
+  width: 915px;
+}
+#shop2 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:white;
+  font-size: 50px;
+}
+#shop3
+{
+  text-align: center;
+  font-size: 30px;
+}
+#shop3 img
+{
+  margin-left: -12px;
+  height: 400px;
+  width: 915px;
+}
+#shop3 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:rgba(235, 146, 223, 0.993);
+  font-size: 55px;
+}
+#shop4
+{
+  text-align: center;
+  font-size: 30px;
+}
+#shop4 img
+{
+  margin-left: -12px;
+  height: 400px;
+  width: 915px;
+}
+#shop4 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:rgba(203, 242, 252, 0.993);
+  font-size: 75px;
+}
+#shop5
+{
+
+  text-align: center;
+  font-size: 30px;
+}
+#shop5 img
+{
+  margin-left: -12px;
+  height: 500px;
+  width: 915px;
+}
+#shop5 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:rgba(166, 233, 175, 0.993);
+  font-size: 55px;
+}
+#shop6
+{
+  text-align: center;
+  font-size: 30px;
+}
+#shop6 img
+{
+  margin-left: -12px;
+  height: 500px;
+  width: 915px;
+}
+#shop6 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:rgba(140, 164, 229, 0.993);
+  font-size: 75px;
+}
+#shop7
+{  text-align: center;
+  font-size: 30px;
+}
+#shop7 img
+{
+  margin-left: -12px;
+  height: 500px;
+  width: 915px;
+}
+#shop7 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:rgba(189, 143, 241, 0.993);
+  font-size: 55px;
+}
+#shop8
+{
+  text-align: center;
+  font-size: 30px;
+}
+#shop8 img
+{
+  margin-left: -12px;
+  height: 500px;
+  width: 915px;
+}
+#shop8 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:rgba(58, 90, 7, 0.993);
+  font-size: 75px;
+}
+#shop9
+{
+  
+  text-align: center;
+  font-size: 30px;
+}
+#shop9 img
+{
+  margin-left: -12px;
+  height: 500px;
+  width: 915px;
+}
+#shop9 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:rgba(232, 201, 211, 0.993);
+  font-size: 75px;
+}
+
+#shop10
+{
+  text-align: center;
+  font-size: 30px;
+  
+
+}
+#shop10 img
+{
+  margin-left: -12px;
+  height: 500px;
+  width: 915px;
+}
+#shop10 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:rgb(11, 241, 50);
+  font-size: 55px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#shop11
+{
+ 
+  text-align: center;
+  font-size: 30px;
+}
+#shop11 img
+{
+  margin-left: -12px;
+  height: 500px;
+  width: 915px;
+}
+#shop11 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:rgba(190, 116, 4, 0.993);
+  font-size: 75px;
+}
+
+#shop12
+{
+
+  text-align: center;
+  font-size: 30px;
+}
+#shop12 img
+{
+  margin-left: -12px;
+  height: 100px;
+  width: 915px;
+}
+#shop12 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:rgba(114, 54, 4, 0.993);
+  font-size: 75px;
+}
+
+#shop13
+{
+ 
+  text-align: center;
+  font-size: 30px;
+  
+
+}
+#shop13 img
+{
+  margin-left: -12px;
+  height: 400px;
+  width: 915px;
+}
+#shop13 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:rgb(246, 131, 231);
+  font-size: 75px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input
+{
+  text-align: center;
+}
+button
+{
+  cursor: pointer;
+}
+/*
+#shop14
+{
+  background-color: rgb(86, 92, 8);
+  text-align: center;
+  font-size: 30px;
+  
+
+}
+#shop14 img
+{
+  margin-left: -12px;
+  height: 500px;
+  width: 915px;
+}
+#shop14 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:rgb(198, 233, 103);
+  font-size: 75px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#shop15
+{
+  background-color: rgb(5, 70, 61);
+  text-align: center;
+  font-size: 30px;
+  
+
+}
+#shop15 img
+{
+  margin-left: -12px;
+  height: 500px;
+  width: 915px;
+}
+#shop15 a
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:rgb(7, 248, 188);
+  font-size: 75px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}*/
+#shop img
+{
+  height: 400px;
+}

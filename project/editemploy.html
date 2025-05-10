@@ -1,0 +1,112 @@
+<html>
+    <head>
+    <style>
+        body{
+            background-image: linear-gradient(red,blue,green,orange,purple,yellow,skyblue);
+            background-repeat: repeat;
+        }
+        #div1
+        {
+            background-color: white;
+            border-radius: 30px;
+            height: 400px;
+            width:1150px;
+            margin:100px;
+            display: flex;
+        }
+        #div2
+        {
+            color:black;
+            border:3px dashed orange;
+            border-left: none;
+            border-bottom: none;
+            border-top: none;
+            height: 400px;
+            width:33%;
+        }
+         #div3
+        {
+            color:black;
+            border:3px dashed orange;
+            border-left: none;
+            border-bottom: none;
+            border-top: none;
+            height: 400px;
+            width:33%;
+        }
+        label
+        {
+           
+            margin-left: 30px;
+            font-size:25px;
+            
+        }
+        input
+        {
+            height: 30px;
+            width: 300px;
+              margin-left: 30px;
+              text-align:center;
+              outline: none;
+        }
+        button
+        {
+            cursor: pointer;
+            margin-bottom:-10px;
+            margin-left:30px;
+            background-color: aqua;
+            border-color: aqua;
+            width: 300px;
+            height: 30px;
+        }
+    </style>
+    </head>
+    <body>
+        <form action="http://localhost:8080/pro/editemploy.jsp" autocomplete="off">
+        <div id="div1">
+           
+            <div id="div2">
+                <br>
+                <label>Employee ID</label><br><br>
+                <input type="text" value="ep" name="t1" required><br><br>
+                <label>Employee Name</label><br><br>
+                <input type="text" placeholder="e.joe" name="t2"  required><br><br>
+                <label>Date Of Birth</label><br><br>
+                <input type="date"  name="t3" required><br><br>
+                <label>Gender</label><br><br>
+                <input type="text" placeholder="male/female/others" name="t4"  required><br><br>
+            </div>
+             <div id="div3">
+                <br>
+                <label>Education</label><br><br>
+                <input type="text" placeholder="ug/pg"  name="t5" required><br><br>
+                <label>Qualification</label><br><br>
+                <input type="text" placeholder="BA/BCA/BE/deplamo"  name="t6" required><br><br>
+                <label>Address</label><br><br>
+                <input type="text" placeholder="34/1 ap.ayyanner Street" name="t7"  required><br><br>
+                <label>PhoneNumber</label><br><br>
+                <input type="text" placeholder="000 00 000 00" name="t8" required><br><br>
+            </div>
+           <div style="width: 34%;">
+                 <br>
+                <label>Post</label><br><br>
+                <input type="text" placeholder="manager/clark/others" name="t9" required><br><br>
+                <label>Salary</label><br><br>
+                <input type="text" placeholder="00000"  name="t10" required><br><br>
+                <label>Joining Date</label><br><br>
+                <input type="text" placeholder="23-09-2003" name="t11" required><br><br>
+                 <button>Edit</button><br><br>
+                </div>
+                
+        </div>
+    </form>  
+    <button onclick="editemp()" style="margin: -154px 44px 0px 891px;border-color:rgb(150, 237, 154) ;background-color:rgb(150, 237, 154) ;">Exit</button><br><br>
+            
+    </body>
+    <script>
+        function editemp()
+        {
+            window.location="editdel2.html";
+        }
+    </script>
+</html>

@@ -1,0 +1,284 @@
+/**
+{
+    box-sizing: border-box;
+}
+
+#base
+{
+    margin:70px 1000px 100px 70px;
+    font-size: 20px;
+    color: black;
+    height: 500px;
+    width:400px;
+    border-radius: 25px;
+    text-shadow: 3px 2px 9px;
+    padding: 5px;
+    padding-top: 50px;
+    border:5px dashed #20058a;
+    box-shadow: 7px 7px 10px #cbbeff;
+    background-color: rgba(255,255,255,0.5);
+}
+label
+{
+    color:white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 7px yellow;
+    margin-left: 81px;
+    margin-top: auto;
+}
+#div1
+{
+    margin: 5px -30px 48px 15px;
+    height: 600px;
+    
+}
+#in4
+{
+    border-color: darkgrey;
+    margin-left: 61px;
+    outline: rebeccapurple;
+    border-radius: 22px;
+    background-color: darkgrey;
+    height: 34px;
+    width: 149px;
+    font-size: 40px;
+    font-size: x-large;
+    color: black;
+    cursor: pointer;
+}
+#in1
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: -24px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #20058a;
+    font-size: 25px;
+    font-family: cursive;
+    background: none;
+    outline: none;
+    color:black;
+    text-align: center;
+    text-shadow: 3px 3px 7px;
+}
+#myInput
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: -24px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #20058a;
+    text-shadow: 3px 3px 7px;
+    font-size: 20px;
+    background: none;
+    outline: none;
+    color:black;
+    text-align: center;
+
+}
+#in1:focus {
+    background: transparent;
+}
+#i2
+{
+margin:-64px 72px 26px 48px;
+font-size: 30px;
+text-shadow: 3px 3px 6px deeppink;
+color:black;
+}*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  #p2 {
+    margin: -60px 4px -34px 73px;
+    color: darkblue;
+    font-size: 50px;
+    font-family: cursive;
+    font-stretch: unset;
+    text-shadow: 3px 2px 9px;
+}  
+  /* Set a style for all buttons */
+  button {
+    background-color: #0ba76d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  #button1 {
+    background-color: #0b9261;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 20%;
+    border-radius: 50%;
+
+  }
+  
+  .container {
+    padding: 8px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  
+
+#i1
+{
+    font-size: 50px;
+    text-shadow: 4px 3px 13px royalblue;
+}
+#a1 {
+    color:black;
+    outline: none;
+    font-size: 20px;
+    margin: 314px -52px 210px 102px;
+}
+#p1
+{
+    margin:-64px 72px 41px 98px;
+    font-size: 45px;
+    color: black;
+    text-shadow: 4px 4px 10px;
+}
+
+#in3
+{
+    border-color: darkgrey;
+    margin-left: -5px;
+    outline: rebeccapurple;
+    border-radius: 17px;
+    background-color: darkgrey;
+    height: 34px;
+    width: 149px;
+    font-size: 40px;
+    font-size: x-large;
+    color: black;
+    cursor: pointer;
+}
+#in3:hover{
+    background-color:aqua;
+    color:black;
+    text-shadow: 5px 5px 10px rgb(221, 5, 5);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#in4:hover{
+    background-color:rgb(247, 98, 227);
+    text-shadow: 5px 5px 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body
+{
+  background-image:url(log1.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align:"center";
+  height: 900px;
+  user-select: none;
+}
+input
+{
+  border: none;
+  outline: none;
+}

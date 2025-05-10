@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        background-image: url(empatt.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    form
+    {
+        background-color:#91acc18a;
+        height: 430px;
+        width:1150px;
+        margin:30px 100px 20px 100px;
+        border-radius: 20px;
+        font-weight: 1000;
+    }
+    label
+    {
+        color:black;font-size: 30px;
+        margin:0px 200px 0px 300px;
+    }
+    input
+    {
+        height: 30px;
+      text-align:center;
+      outline: none;
+      border:none ;
+      width:170px;
+    }
+    #s
+    
+    {
+        height: 30px;
+      text-align:center;
+      outline: none;
+      border:none ;
+      width:170px;
+    }
+   
+    h1
+    {
+        background-color: #c6d0d2a6;
+        height: 100px;
+        font-size:50px;
+        color:#443b3e;
+        text-align: center;
+        border-radius: 20px;
+    }
+</style>
+<body>
+    <h1>Employee Attendance</h1>
+    <form action="http://localhost:8080/pro/empatt.jsp"><br><br>
+        <label for="">Employee Id</label><input type="text" value="ep" style="margin-left: -97px;" name="t1"><br><br><br>
+        <label for="">Date</label><input type="date" name="t2" style="margin-left: 8px;background-color: #0d0a0a54;" required><br><br><br>
+        <label for="">Morning Status</label>
+            <select name="t3" id="s" style="margin-left: -136px;">
+                <option value="present">present</option>
+                <option value="absent">absent</option>
+            </select><br><br><br>
+            <label for="">Evening Status</label>
+            <select name="t4" id="s" style="margin-left: -128px;">
+                <option value="present">present</option>
+                <option value="absent">absent</option>
+            </select><br>
+        <br><br>
+  
+        <button style="height: 30px;background-color: white;border: none;color: black;margin-left:500px;width:150px;cursor: pointer;">save</button><br><br>
+        <input type="button" value="Exit" onclick="shop()" style="border: none;background-color: white;color: black;margin-left:500px;width:150px;cursor: pointer;background-color: white;">
+    </form>
+    
+</body>
+
+<script>
+    function shop()
+    {
+        window.location="shopdiv10.html";
+    }
+</script>
+</html>
